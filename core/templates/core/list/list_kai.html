@@ -1,0 +1,94 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<div class='container'>
+    <div>
+        <a class='btn btn-secondary' href="{% url 'listupdatekai' %}">Nuevo +</a>
+        <a class='btn btn-secondary' href="{% url 'listupdatekai' %}">Modificar</a>
+    </div>
+    <table class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Lista de Kai</th>
+
+          </tr>
+        </thead>
+        <tbody>
+            {% for p in product %}
+            <tr>
+                <th scope="row">{{p.id}}</th>
+                <td>{{p.name}}</td>
+                <td>${{p.price}}</td>
+
+                {% if p.corte1 == null %}
+                  
+                {% else %}
+                  <td>{{p.corte1}}</td>
+                {% endif %}
+                {% if p.corte2 == null %}
+                  
+                {% else %}
+                  <td>{{p.corte2}}</td>
+                {% endif %}
+                {% if p.corte3 == null %}
+                  
+                {% else %}
+                  <td>{{p.corte3}}</td>
+                {% endif %}
+                {% if p.corte4 == null %}
+                  
+                {% else %}
+                  <td>{{p.corte4}}</td>
+                {% endif %}
+                {% if p.corte5 == null %}
+                  
+                {% else %}
+                  <td>{{p.corte5}}</td>
+                {% endif %}
+                {% if p.corte6 == null %}
+                  
+                {% else %}
+                  <td>{{p.corte6}}</td>
+                {% endif %}
+                {% if p.corte7 == null %}
+                  
+                {% else %}
+                  <td>{{p.corte7}}</td>
+                {% endif %}
+                {% if p.extra1 == null %}
+                  
+                {% else %}
+                  <td>{{p.extra1}}</td>
+                {% endif %}
+                {% if p.extra2 == null %}
+                  
+                {% else %}
+                  <td>{{p.extra2}}</td>
+                {% endif %}
+                {% if p.extra3 == null %}
+                  
+                {% else %}
+                  <td>{{p.extra3}}</td>
+                {% endif %}
+                {% if p.extra4 == null %}
+                  
+                {% else %}
+                  <td>{{p.extra4}}</td>
+                {% endif %}
+                {% if p.extra5 == null %}
+                  
+                {% else %}
+                  <td>{{p.extra5}}</td>
+                {% endif %}
+                
+                
+                
+                
+                <td><a class='btn btn-success' href="{% url 'Add' p.id 'kai' %}">Anadir al Carrito</a>
+            </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+</div>
+{% endblock content %}
+

@@ -1,0 +1,184 @@
+
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class='col-12 align-self-center'>
+            <h1 class="display-1">Restaurant System</h1>
+        </div>
+    </div>
+    
+    {% if user.is_authenticated %}
+    <div class="row">
+        <div class="col-md-12 search pb-4">
+            <div class="card">
+                <h3>Productos no disponibles</h3>
+                {% for i in probwl %}
+                    {% if i.state == False %}
+                        <td>{{ i.name }}  Bowl  -- </td>
+                    {% endif %}
+{% endfor %}
+{% for i in proal %}
+    {% if i.state == False %}
+        <td>{{ i.name }} </td><td> Almuerzo Proteina --  </td>
+    {% endif %}
+{% endfor %}
+{% for i in prodes %}
+    {% if i.state == False %}
+        <td>{{ i.name }} </td><td> Desayuno Proteina  -- </td>
+    {% endif %}
+
+{% endfor %}
+
+
+{% for i in prohand %}
+    {% if i.state == False %}
+        <td>{{ i.name }} </td><td> Handroll Proteina  -- </td>
+    {% endif %}
+
+{% endfor %}
+
+
+{% for i in basebowl %}
+    {% if i.state == False %}
+        <td>{{ i.name }} </td><td>  Bowl Base</td>
+    {% endif %}
+{% endfor %}
+
+{% for i in extbowl %}
+    {% if i.state == False %}
+        <td>{{ i.name }} </td><td>  Bowl Extra --  </td>
+    {% endif %}
+
+{% endfor %}
+
+
+{% for i in vgthand %}
+    {% if i.state == False %}
+        <td>{{ i.name }} </td><td>  HandRoll Vegetal -- </td>
+    {% endif %}
+{% endfor %}
+
+{% for i in agral %}
+    {% if i.state == False %}
+        <td>{{ i.name }} </td><td>  Almuerzo Agregado --  </td>
+    {% endif %}
+{% endfor %}
+{% for i in qsdes %}
+    {% if i.state == False%}
+        <td>{{ i.name }} </td><td>  Desayuno Queso  -- </td>
+    {% endif %}
+    
+{% endfor %}
+{% for i in bgtdes %}
+    {% if i.state  == False%}
+        <td>{{ i.name }} </td><td>  Desayuno  Vegetal  --  </td>
+    {% endif %}
+{% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    
+    <div class="row">
+        <div class='col-8'>
+            <div class="row" style="padding:10px 0;">
+                <div class='col-12'>
+                    <div class="row">
+                            <div class="col-6 ">
+                                <div class="card " style="height: 15rem; width: 15rem; margin: 5px 0px;">
+                                    <div class="card-body">
+                                        <div class="container flex-column d-flex justify-content-center">
+                                            <h3 class="card-title">Bowl</h3>
+                                        <p class="card-text">Proteina + Base</p>
+                                        <p class="card-text">2 Salsas</p>
+                                        <a href="{% url 'newbowl'%}" class="btn btn-primary">Ir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="card " style="height: 15rem; width: 15rem; margin: 5px 0px;">
+                                    <div class="card-body">
+                                        <div class="container flex-column d-flex justify-content-center">
+                                            <h3 class="card-title">HandoRoll</h3>
+                                        <p class="card-text">3 Rellenos</p>
+                                        <p class="card-text"> </p>
+                                        <a href="{% url 'newhandroll'%}" class="btn btn-primary">Ir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="card " style="height: 15rem; width: 15rem; margin: 5px 0px;">
+                                    <div class="card-body">
+                                        <div class="container flex-column d-flex justify-content-center">
+                                            <h3 class="card-title">Almuerzo</h3>
+                                        <p class="card-text">Carne</p>
+                                        <p class="card-text">Agrenado</p>
+                                        <a href="{% url 'listal'%}" class="btn btn-primary">Ir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="card " style="height: 15rem; width: 15rem; margin: 5px 0px;">
+                                    <div class="card-body">
+                                        <div class="container flex-column d-flex justify-content-center">
+                                            <h3 class="card-title">Desayuno</h3>
+                                        <p class="card-text">Queso + Proteina</p>
+                                        <p class="card-text">2 Vegetales</p>
+                                        <a href="{% url 'newdesayuno'%}" class="btn btn-primary">Ir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="card " style="height: 15rem; width: 15rem; margin: 5px 0px;">
+                                    <div class="card-body">
+                                        <div class="container flex-column d-flex justify-content-center">
+                                            <h3 class="card-title">HandoRoll Classic</h3>
+                                        <p class="card-text">Seleccionar</p>
+                                        <p class="card-text"> </p>
+                                        <a href="{% url 'listhc'%}" class="btn btn-primary">Ir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="card " style="height: 15rem; width: 15rem; margin: 5px 0px;">
+                                    <div class="card-body">
+                                        <div class="container flex-column d-flex justify-content-center">
+                                            <h3 class="card-title">Kai</h3>
+                                        <p class="card-text">Seleccionar</p>
+                                        <p class="card-text"> </p>
+                                        <a href="{% url 'listkai'%}" class="btn btn-primary">Ir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="card " style="height: 15rem; width: 15rem; margin: 5px 0px;">
+                                    <div class="card-body">
+                                        <div class="container flex-column d-flex justify-content-center">
+                                            <h3 class="card-title">Selladitos</h3>
+                                        <p class="card-text">Seleccionar</p>
+                                        <p class="card-text"> </p>
+                                        <a href="{% url 'listsell'%}" class="btn btn-primary">Ir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            {% include "core/carrito.html" %}
+        </div>
+    </div>
+</div>
+{% endblock content %}
+

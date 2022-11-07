@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="container p-5">
+    <h4>Bowls</h4>
+    <form method="POST" enctype="multipart/form-data">
+ 
+        <!-- Security token -->
+        {% csrf_token %}
+     
+        <!-- Using the formset -->
+        {{ form.as_p }}
+         
+        <input type="submit" value="Submit">
+</div>
+{% endblock content %}
+

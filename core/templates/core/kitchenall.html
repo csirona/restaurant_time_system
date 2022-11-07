@@ -1,0 +1,60 @@
+{% extends 'core/base.html' %}
+{% block content %}
+
+<div class="container ">
+    
+    <div class='conatiner d-flex flex-row'>
+        {% for place in cmd %}
+
+        <div class="card ml-3" style="width: 18rem;">
+            <div class="card-body">
+                <h3 class="text-center">{{ place.id }}</h3>
+                
+                    Numero Comanda: {{ place.id }}<br/>
+                    Author: {{ place.author }}<br/>
+                    Tiempo Estimado: {{place.time}}<br/>
+                    Hora Comanda: {{ place.time_to_kitchen }}<br/>
+                    toiepo est: {{ place.toScns }}<br/>
+                    Hora Entrega: {% if place.time_finished  %}
+                                    {{ place.time_finished }}
+                                {% else %}
+                                    No entregado
+                                {% endif %}<br/>
+                    Pedido: <br/>{% for area in place.article.all %}- {{ area.cantidad }} x {{ area }}<br/>{% endfor %}
+               
+            </div>
+          </div>
+    
+          {% endfor %}
+    </div>
+    <div class='container d-flex justify-content-center'>
+        {% if cmd.paginator.num_pages  %}
+      <ul class="pagination">
+        {% if cmd.has_previous %}
+          <li class="page-item"><a class="page-link" href="?page={{ cmd.previous_page_number }}">&laquo;</a></li>
+        {% else %}
+          <li class="page-item disabled"><a class="page-link">&laquo;</a></li>
+        {% endif %}
+        {% for i in cmd.paginator.page_range %}
+          {% if cmd.number == i %}
+            <li class="active page-item"><span a class="page-link">{{ i }} <span class="sr-only">(current)</span></span></li>
+          {% else %}
+            <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+          {% endif %}
+        {% endfor %}
+        {% if cmd.has_next %}
+          <li class="page-item"><a class="page-link" href="?page={{ cmd.next_page_number }}">&raquo;</a></li>
+        {% else %}
+          <li class="page-item disabled"><span class="page-link">&raquo;</span></li>
+        {% endif %}
+      </ul>
+    {% endif %}
+    </div>
+    
+    
+      
+    
+</div>
+
+{% endblock content %}
+

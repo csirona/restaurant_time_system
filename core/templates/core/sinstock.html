@@ -1,0 +1,65 @@
+<div>
+    {% for i in probowl %}
+    {% if i.state %}
+        <td>{{ i.name }} </td><td> Bowl Proteina</td>
+    {% endif %}
+    ghbdg
+{% endfor %}
+{% for i in proal %}
+    {% if i.state  %}
+        <td>{{ i.name }} </td><td> Almuerzo Proteina</td>
+    {% endif %}
+{% endfor %}
+{% for i in prodes %}
+    {% if i.state  %}
+        <td>{{ i.name }} </td><td> Desayuno Proteina</td>
+    {% endif %}
+
+{% endfor %}
+
+
+{% for i in prohand %}
+    {% if i.state  %}
+        <td>{{ i.name }} </td><td> Handroll Proteina</td>
+    {% endif %}
+
+{% endfor %}
+
+
+{% for i in basebowl %}
+    {% if i.state  %}
+        <td>{{ i.name }} </td><td>  Bowl Base</td>
+    {% endif %}
+{% endfor %}
+
+{% for i in extbowl %}
+    {% if i.state  %}
+        <td>{{ i.name }} </td><td>  Bowl Extra</td>
+    {% endif %}
+
+{% endfor %}
+
+
+{% for i in vgthand %}
+    {% if i.state%}
+        <td>{{ i.name }} </td><td>  HandRoll Vegetal</td>
+    {% endif %}
+{% endfor %}
+
+{% for i in agral %}
+    {% if i.state  %}
+        <td>{{ i.name }} </td><td>  Almuerzo Agregado</td>
+    {% endif %}
+{% endfor %}
+{% for i in qsdes %}
+    {% if i.state %}
+        <td>{{ i.name }} </td><td>  Desayuno Queso</td>
+    {% endif %}
+    
+{% endfor %}
+{% for i in bgtdes %}
+    {% if i.state  %}
+        <td>{{ i.name }} </td><td>  Desayuno  Vegetal</td>
+    {% endif %}
+{% endfor %}
+</div>

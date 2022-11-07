@@ -1,0 +1,579 @@
+
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Menú Kai-Sushi</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link rel="icon" href="{% static 'img/favicon.ico' %}">
+
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+        <link rel="stylesheet" href="{% static 'lib/animate/animate.min.css' %}">
+        <link rel="stylesheet" href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}">
+
+
+        <link rel="stylesheet" href="{% static 'lib/flaticon/font/flaticon.css' %}">
+        <link rel="stylesheet" href="{% static 'lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}">
+
+        <!-- Template Stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+
+    <body>
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+        
+        
+        <!-- Page Header Start -->
+        <div class="page-header mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Menú</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="">Home</a>
+                        <a href="">Menú</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+        
+        
+        <!-- Food Start -->
+        <div class="food mt-0">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="food-item">
+                            <i ><img src='{% static 'img/icons8-sushi-80.png' %}'></i>
+                            <h2>Sushi</h2>
+                            <p>
+                                Las mejores promos de sushi
+                            </p>
+                            <a href="">View Menu</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="food-item">
+                            <i ><img src='{% static 'img/icons8-lunch-64.png' %}'></i>
+                            <h2>Almuerzos</h2>
+                            <p>
+                                Las mejores promos de sushi
+                            </p>
+                            <a href="">View Menu</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="food-item">
+                            <i ><img src='{% static 'img/icons8-sushi-kawaii-96.png' %}'></i>
+                            <h2>Handrolls</h2>
+                            <p>
+                                Las mejores promos de sushi
+                            </p>
+                            <a href="">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Food End -->
+        
+
+        <!-- Menu Start -->
+        <div class="menu">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Menú</p>
+                    <h2>Kai Sushi Ofrece</h2>
+                </div>
+                <div class="menu-tab">
+                    <ul class="nav nav-pills justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#burgers">Lo Nuevo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#Kai-1">Kai-1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#Kai-2">Kai-2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#HandoRolls">HandoRolls</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#Desayunos">Desayunos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#Almuerzos">Almuerzos</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="burgers" class="container tab-pane active">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-burger.jpg' %} " alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>La Gran Kai</span> <strong>$18.990</strong></h3>
+                                            <p>24 Cortes Panko = 8 Cortes QC Mani - 8 Cortes J. Serrano</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-burger.jpg' %} " alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Katzumoto</span> <strong>$17.990</strong></h3>
+                                            <p>8 Cortes J. Serrano - 8 Cortes Palta - 24 Cortes Panko - 16 Cortes QC</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-burger.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Sajajin</span> <strong>$12.990</strong></h3>
+                                            <p>24 Cortes Panko - 16 Cortes Tempura</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-burger.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Harakiri</span> <strong>$19.990</strong></h3>
+                                            <p>8 Cortes J. Serrano - 16 Cortes Palta - 16 Cortes Panko - 16 Cortes QC</p>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="{% static 'img/menu-burger-img.jpg' %}" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Kai-1" class="container tab-pane fade">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-snack.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Kai I</span> <strong>$7.990</strong></h3>
+                                            <p>16 Cortes Panko - 8 Cortes Tempura</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-snack.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Kai II</span> <strong>$11.990</strong></h3>
+                                            <p>16 Cortes Panko - 8 Cortes Tempura - 8 Cortes Palta = 8 Cortes Sesamo - 6 Arrollados Primavera</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-snack.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Kai III</span> <strong>$16.500</strong></h3>
+                                            <p>16 Cortes Panko - 8 Cortes Tempura - 16 Cortes Palta - 9 Corte Salmon - 8 Hosomaki - 5 Arrollados Primavera - 5 Pollo Katzu</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-snack.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Kai IV</span> <strong>$10.990</strong></h3>
+                                            <p>8 Cortes Tempura - 8 Cortes Panko - 8 Cortes Palta</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="{% static 'img/menu-snack.jpg' %}" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Kai-2" class="container tab-pane fade">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Godzilla</span> <strong>$16.500</strong></h3>
+                                            <p>8 Cortes de Panko - 8 Cortes QC - 8 Cortes Palta - 8 Cortes Salmon -    8 Hosomaki</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Katana</span> <strong>$10.990</strong></h3>
+                                            <p>8 Cortes Panko - 8 Cortes Tempura - 8 Cortes Salmon</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Samurai</span> <strong>$9.500</strong></h3>
+                                            <p>4 Rolls a Eleccion del Chef Para que Disfrutes</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Kamikaze</span> <strong>$24.000</strong></h3>
+                                            <p>32 Cortes Panko - 16 Cortes QC - 16 Cortes Palta - 8 Cortes Salmon - 8 Cortes Ciboulette</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="{% static 'img/menu-beverage-img.jpg' %}" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="HandoRolls" class="container tab-pane fade">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Pollo/QC/Cebollin</span> <strong>$2.500</strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Pollo/QC/Pimiento</span> <strong>$25.000</strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Pollo/QC/Palta</span> <strong>$2.800</strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Camaron/QC/Palta</span> <strong>$3.300</strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Camaron/QC/Cebollin</span> <strong>$3.000</strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Kanikama/QC/Palta</span> <strong>$2.800</strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Kanikama/QC/Pimiento</span> <strong>$2.500</strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Res/QC/Morron</span> <strong>$2.500</strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Res/QC/Palta</span> <strong>$2.800</strong></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="{% static 'img/menu-beverage-img.jpg' %}" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Desayunos" class="container tab-pane fade">
+                            <div class="row">
+                                
+                                <div class="col-lg-7 col-md-12">
+                                    <h2>Sandwish en Masa Madre</h2>
+                                    <h7>(De 8:00 a 12:00 AM)</h7>
+                                    <div class="menu-item  mb-3">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Escoge tu Queso</span> <strong></strong></h3>
+                                            <p>Cheddar - Mantecoso - Crema - Gauda</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Escoge tu Proteina</span> <strong></strong></h3>
+                                            <p>J. Serrano - Salame - J.Pavo - Pierna - Pollo</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Escoge 2 Vegetales</span> <strong></strong></h3>
+                                            <p>Rucula - Albahaca - Tomate/Cherry - Pimiento - Cebollin - Ciboulette</p>
+                                        </div>
+                                    </div>
+                                    <h2>Selladitos</h2>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Base Queso</span> <strong>$1.300</strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>J. Serrano/Queso</span> <strong>$1.800</strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Salame/Queso</span> <strong>$1.600</strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>J. Pierna/Queso</span> <strong>$1.600</strong></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="{% static 'img/menu-beverage-img.jpg' %}" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Almuerzos" class="container tab-pane fade">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+
+                                    <h2>Carnes</h2>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Carnes Mongoleanas</span> <strong></strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Asado a la Olla</span> <strong></strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Pulpa de Cerdo</span> <strong></strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Pollo Apanado</span> <strong></strong></h3>
+                                        </div>
+                                    </div>
+                                    <h2>Agregados</h2>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Arroz</span> <strong></strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Pasta</span> <strong></strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Papas Salteadas</span> <strong></strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Papas Rusticas</span> <strong></strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="{% static 'img/menu-beverage.jpg' %}" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Quinoa</span> <strong></strong></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="{% static 'img/menu-beverage-img.jpg' %}" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer-contact">
+                                    <h2>Our Address</h2>
+                                    <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
+                                    <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                                    <p><i class="fa fa-envelope"></i>info@example.com</p>
+                                    <div class="footer-social">
+                                        <a href=""><i class="fab fa-twitter"></i></a>
+                                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-youtube"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="footer-link">
+                                    <h2>Quick Links</h2>
+                                    <a href="">Terms of use</a>
+                                    <a href="">Privacy policy</a>
+                                    <a href="">Cookies</a>
+                                    <a href="">Help</a>
+                                    <a href="">FQAs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="footer-newsletter">
+                            <a target="_blank" href="https://icons8.com/icon/QLV6YeXQ0VPj/sushi">Sushi</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>Copyright &copy; <a href="#">Your Site Name</a>, All Right Reserved.</p>
+                    <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>   
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>   
+        <script src="{% static 'lib/easing/easing.min.js' %}"></script>   
+        <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>   
+        <script src="{% static 'lib/tempusdominus/js/moment.min.js' %}"></script>   
+        <script src="{% static 'lib/tempusdominus/js/moment-timezone.min.js' %}"></script>   
+        <script src="{% static 'lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"' %}"></script>   
+             
+        
+        <!-- Contact Javascript File -->
+        <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+        <script src="{% static 'mail/contact.js' %}"></script>
+
+        <!-- Template Javascript -->
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>

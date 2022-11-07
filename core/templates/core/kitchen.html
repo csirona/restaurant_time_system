@@ -1,0 +1,57 @@
+{% extends 'core/base.html' %}
+{% block content %}
+
+<div class="container d-flex flex-row">
+    
+    
+    {% for place in cmd %}
+    {% if place.cooking == True %}
+    <div class="card ml-3" style="width: 18rem;">
+        <div class="card-body">
+            <h3 class="text-center">{{ place.id }}</h3>
+            
+                Numero Comanda: {{ place.id }}<br/>
+                Author: {{ place.author }}<br/>
+                 {% if  place.cooking  %}Estado:
+                                    En concina
+                                {% endif %}<br/>
+                Tiempo Estimado: {{place.time}}<br/>
+                Pedidos: <br/>{% for area in place.article.all %}- {{ area }}<br/>
+                {% endfor %}
+                Comentario {{place.coments}}<br/>
+
+        </div>
+        <a href="{% url 'ready' place.id%}" class="btn btn-warning">Ready</a>
+      </div>
+      {% endif %}
+      {% endfor %}
+    
+    
+    
+</div>
+<div class='container d-flex justify-content-center'>
+    {% if cmd.paginator.num_pages  %}
+  <ul class="pagination">
+    {% if cmd.has_previous %}
+      <li class="page-item"><a class="page-link" href="?page={{ cmd.previous_page_number }}">&laquo;</a></li>
+    {% else %}
+      <li class="page-item disabled"><a class="page-link">&laquo;</a></li>
+    {% endif %}
+    {% for i in cmd.paginator.page_range %}
+      {% if cmd.number == i %}
+        <li class="active page-item"><span a class="page-link">{{ i }} <span class="sr-only">(current)</span></span></li>
+      {% else %}
+        <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+      {% endif %}
+    {% endfor %}
+    {% if cmd.has_next %}
+      <li class="page-item"><a class="page-link" href="?page={{ cmd.next_page_number }}">&raquo;</a></li>
+    {% else %}
+      <li class="page-item disabled"><span class="page-link">&raquo;</span></li>
+    {% endif %}
+  </ul>
+{% endif %}
+</div>
+
+{% endblock content %}
+
